@@ -20,7 +20,7 @@ app.use(express.json());
 
 
 // post api
-app.post("/user", async (req, res) => {
+app.post("/", async (req, res) => {
   let { name, email, password } = req.body;
   const postdata = mongoose.model("user", (await connected.connected()).user);
   res.send(await postdata({name,email,password}).save())
