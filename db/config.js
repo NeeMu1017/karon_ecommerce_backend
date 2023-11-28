@@ -1,2 +1,2 @@
 const mongoose = require("mongoose");
-const url = mongoose.connect("mongodb://127.0.0.1:27017/ecommerce");
+const url = mongoose.connect("mongodb+srv://nirmal2435:12345@cluster0.cqs5rdx.mongodb.net/ecommerce");
