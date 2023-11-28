@@ -27,7 +27,7 @@ router.post("/auth", async (req, res) => {
   //res.send(fountuser);
 });
 
-router.post("/user", async (req, res) => {
+router.post("/", async (req, res) => {
   const User = new user({
     name: req.body.name,
     email: req.body.email,
